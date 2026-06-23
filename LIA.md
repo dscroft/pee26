@@ -46,7 +46,8 @@ Previous versions:
 @end
 
 import: https://raw.githubusercontent.com/LiaScript/CodeRunner/master/README.md
-import: ../assets/macros.md
+import: assets/macros.md
+import: assets/sqli_demo.md
 -->
 
 
@@ -80,7 +81,8 @@ The Intelligent Vehicles (IV) teaching group within Warwick Manufacturing Group 
 
 Delivery was a success.
 
-## Maintainence
+
+## Maintenance
 
 Regular updates.
 
@@ -249,11 +251,9 @@ Or Images:
 </iframe>
 
 
-# Usage at WMG
+# Usage in WMG
 
-## Reasons
-
-Run multiple courses and modules at various levels.
+Multiple courses and modules at various levels.
 
 - UG, MSc, DA, CPD.
 
@@ -273,9 +273,50 @@ Because LiaScript is just markdown and therefore a text file.
 - Multiple collaborators can work on the same file without conflicts.
 - Changes are tracked, and previous versions can be easily restored if needed.
 
-## Extension
+## Extensions
 
-SQli example
+### Programming for AI
+
+For example, the Programming for AI module:
+
+- Makes heavy use of ability to embed runnable code.
+  - Coderunner extension.
+
+<section class="flex-container">
+<div class="flex-child" style="min-width: 250px">
+````markdown
+```python
+for i in range(5):
+  print( f"Hello World! {i}" )
+```
+@LIA.python()
+````
+</div>
+<div class="flex-child" style="min-width: 250px">
+```python
+for i in range(5):
+  print( f"Hello World! {i}" )
+```
+@LIA.python()
+</div>
+</section>
+
+
+### Automotive Cybersecurity CPD
+
+SQL injection demonstrations
+
+- Uses AlaSQL to run a SQL database in the browser.
+  - Based on work by the [DART Team](dart@chop.edu).
+
+          {{1}}
+************************************
+
+@LoginExample
+
+************************************
+
+
 
 ## Arduino interface
 
@@ -291,7 +332,18 @@ SQli example
 
 ## Future work
 
-Integrating ROS into LiaScript
+<section class="flex-container">
+<div class="flex-child" style="min-width: 250px">
+Integrating ROS into LiaScript.
+
+- RobotWebTools/Roslibjs for interaction with ROS.
+  - Have used them previously to create web interfaces for robots.
+  - Working on a LiaScript wrapper.
+</div>
+<div class="flex-child" style="min-width: 250px">
+![](media/jazzy.png)
+</div>
+</section>
 
 
 
