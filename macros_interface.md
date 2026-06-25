@@ -248,11 +248,11 @@ document.getElementById('right').addEventListener('click', sendSignalMsg);
 
 
 @can.retransmit_ui
-<label>CAN Frame ID: </label><input class="lia-quiz__input" type="text" id="can_frame_id" placeholder="123">
-<label>CAN Data: </label><input class="lia-quiz__input" type="text" id="can_frame_data" placeholder="A1B2C3D4E5F6">
-<div id="sliders" style="display: none;">
-  <label>Duration: </label><span id="duration"></span><input type="range" min="1" max="30" value="1" id="can_frame_duration">
-  <label>Rate: </label><span id="hz"></span><input type="range" min="1" max="100" value="1" id="can_frame_hz">
+<label>CAN Frame ID: </label><input class="lia-quiz__input" type="text" id="can_frame_id" value="81">
+<label>CAN Data: </label><input class="lia-quiz__input" type="text" id="can_frame_data" value="0x0000C80000000000">
+<div id="sliders">
+  <label>Duration: </label><span id="duration"></span><input type="range" min="1" max="30" value="15" id="can_frame_duration">
+  <label>Rate: </label><span id="hz"></span><input type="range" min="1" max="100" value="100" id="can_frame_hz">
 </div>
 @end
 

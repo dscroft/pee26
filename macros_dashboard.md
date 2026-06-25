@@ -10,8 +10,8 @@ comment:  This is placeholder module to save macros used in other modules.
 
 @end
 
-script: html5-canvas-speedometer/js/fraction.min.js
-script: html5-canvas-speedometer/js/speedometer.js
+script: assets/html5-canvas-speedometer/js/fraction.min.js
+script: assets/html5-canvas-speedometer/js/speedometer.js
 
 @onload
 console.log("Loading dashboard module");
@@ -87,7 +87,7 @@ window.tacho = 0.0;
             window.gas = Math.max( 0.1, window.gas - 0.00005 );
         }
 
-        window.mileage += window.speed / 100;
+        window.mileage += window.speed / 500;
 
         if( !document.getElementById("canvas") )
         {
