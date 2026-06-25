@@ -118,8 +118,8 @@ lights  | "@_o"|  "@_d" | "@_f"|
 
 Driver seatbelt "@_s"
 
-Accelerator "@_a               "
-"@_al"
+Accelerator   "@_a               "
+"@_al    "
 ```
 @end
 

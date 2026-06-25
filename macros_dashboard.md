@@ -97,6 +97,7 @@ window.tacho = 0.0;
 
         try
         {
+
             window.Dashboard.draw( document.getElementById("canvas"), 
                 Math.max( 0, window.speed + ( 0.005 * Math.random() -0.0025 ) ),
                 window.tacho * 0.93, 
