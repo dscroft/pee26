@@ -1,0 +1,65 @@
+
+  .browser-window {
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .browser-header {
+    display: flex;
+    align-items: center;
+    background-color: #e5e7eb;
+    padding: 8px 12px;
+  }
+
+  .browser-buttons {
+    display: flex;
+    gap: 6px;
+    margin-right: 12px;
+  }
+
+  .browser-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+
+  .red { background-color: #ff5f56; }
+  .yellow { background-color: #ffbd2e; }
+  .green { background-color: #27c93f; }
+
+  .header-title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .content {
+    display: flex;
+    padding: 20px;
+  }
+
+  .form-section {
+    flex: 1;
+  }
+
+  .form-section label {
+    font-weight: bold;
+  }
+
+  .logo-section {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+  }
+
+  .logo-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      background-color: black;
+    }

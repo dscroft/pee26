@@ -9,8 +9,13 @@ classroom: enable
 mode: Presentation
 icon: https://dscroft.github.io/liascript_materials/assets/logo.svg
 
+import: https://raw.githubusercontent.com/LiaScript/CodeRunner/master/README.md
 import: macros_interface.md
 import: macros_dashboard.md
+import: sqli_demo.md
+
+
+link:  styles.css
 
 @style
 .lia-effect__circle {
@@ -34,6 +39,10 @@ import: macros_dashboard.md
         flex: 100%; /* Makes the child divs take up the full width on slim devices */
         margin-right: 0; /* Removes the right margin */
     }
+}
+
+#slidetext {
+    min-width: 700px;
 }
 @end
 
@@ -78,71 +87,89 @@ window.send_can_frame = function(frameid, data) {
 
 # LiaScript for real and virtual hardware control
 
+*David Croft and Sulakshan Rajendran*
+
+---------------------------------------
+
 This presentation was created in [LiaScript](https://liascript.github.io/).
 
 <section class="flex-container">
-  <div class="flex-child">
+<div class="flex-child" id="slidetext">
 
-    - If you want to follow along.
-  </div>
+- This is "Presentation" mode.
+- If you want to follow along.
   
-  <div class="flex-child">
-    [qr-code](https://liascript.github.io/course/?eyJiYWNrZW5kIjoiR1VOfGZ8aHR0cHM6Ly9ndW4ubzguaXMvZ3VuLCBodHRwczovL2d1bi5kZWZ1Y2MubWUvZ3VuLCBodHRwczovL3Nob2d1bi1yZWxheS5zY29icnVkb3QuZGV2L2d1biwgaHR0cHM6Ly9yZWxheS5wZWVyLm9vby9ndW4iLCJjb3Vyc2UiOiJodHRwczovL2RzY3JvZnQuZ2l0aHViLmlvL3BlZTI2L0xJQS5tZCIsInJvb20iOiJwZWUyNiJ9#1)
-  </div>
+  - Just scan the QR to get the URL.
+  - Click connect on the Classroom page.
+
+Need someone to or the demo won't work.
+</div>
+  
+<div class="flex-child">
+[qr-code](https://liascript.github.io/course/?eyJiYWNrZW5kIjoiTVFUVCIsImNvdXJzZSI6Imh0dHBzOi8vZHNjcm9mdC5naXRodWIuaW8vcGVlMjYvTElBLm1kIiwicm9vbSI6InBlZTI2In0=#1)
+</div>
 </section>
 
 
 # WMG
 
+<section class="flex-container">
+<div class="flex-child" id="slidetext">
 The Intelligent Vehicles (IV) teaching group within Warwick Manufacturing Group (WMG).
 
 - Been delivering the Smart Connected Autonomous Vehicles (SCAV) maters programme.
-- Begins offering CPD variant to a top level automotive company. 
-  - 2024.
+- Begin offering CPD variant to a top level automotive company. 
+  
+  - <span>2024</span>.
   - Additional commercially sensitive information.
+
 - Delivered via WMG e-learning platform.
+  
   - SCORM files on a secure Moodle.
   - Relied on a commercial suite of software tools. 
 
 Delivery was a success.
-
+</div>
+<div class="flex-child">
+!["3xD simulator"](media/20200827_110909.jpg "3xD simulator")
+</div>
+</section>
 
 ## Maintenance
 
-Regular updates.
+<section class="flex-container">
+<div class="flex-child" id="slidetext">
+Course needs regular updates.
 
-- Specific changes requested by partner organisation.
-  - Change management was a problem but to the platform's functionality.
+- Changes requested by partner organisation.
+  - Change management was a problem due to the platform's functionality.
   - Only one person able to work at a time.
-- Specific incident.
-  - Half the course lost day beforehand.
+  
+- Specific major incident.
+  - Half the module material lost from the platform.
   - Backups meant no delivery impact.
-  - Had to recreate.
+  - But had to recreate everthing.
   
 Commercial suite might be acceptable for an individual.
 
-- Does not work for a team.
+- Did not work for a team.
+</div>
+<div class="flex-child">
+![PHD comics, Final.doc, Final_rec2.doc, FINAL_rev.6.COMMENTS.doc etc.](media/phd101212s.gif "Version control failures")
+</div>
+</section>
 
-
-As such members of the IV teaching group began to explore alternative software provisions. 
-The loss of materials exemplified exactly the type of problem that robust version control is designed to eliminate, and so identifying an alternative platform which included or could support such functionality was a priority.
-As version control systems function best with text based files, and as the group had prior experience with markdown based document generation, this led very quickly to the identification of LiaScript as a suitable alternative.
 
 # LiaScript
 
-LiaScript is an open-source framework for creating interactive learning materials. 
+LiaScript is framework for creating interactive learning materials. 
 
 - Credit to André Dietrich.
-- It allows educators to create engaging content using a simple markup language, making it easy to integrate multimedia elements and interactive features.
-
-LiaScript is an open-source framework for creating interactive and multimedia-rich educational content using markdown. 
-Although lacking some of the GUI development tools offered by the commercial suite, it offered dramatic improvements in collaborative development, version control and customisation. 
-Indeed, as it supports embedding HTML and JavaScript, the extensibility of the platform is substantial.
-
-The defacto solution is to use a github repository to provide version control of the materials and to then use that same repository as a hosting solution for the markdown files.
-All that is required is to point the main LiaScript site to the URL of the markdown file which is then parsed and rendered as an interactive page.
-If materials are commercially sensitive, as with some of the WMG materials, the markdown files can be converted to HTML or SCORM formats using the LiaScript exporter for internal hosting.
-
+- Open-source.
+  - Free as in speech.
+  - Free as in beer.
+- Simple Markdown syntax.
+  - Majority of built in functionality.
 
 ## Markdown based
 
@@ -292,50 +319,92 @@ According to Douglas Adams at least.
 
 Plus:
 
+<section class="flex-container">
+<div class="flex-child">
 - Videos.
 - Animations.
 - Hyperlinks.
 - Footnotes.
 - Audio.
+</div>
+<div class="flex-child">
 - Lists.
 - Charts.
 - Ascii art.
 - TTS.
 - And more.
+</div>
+</section>
 
 ************************************
 
-## Publishing
+## Deployment
+
+<section class="flex-container">
+<div class="flex-child" id="slidetext">
 
 **Simple option**
 
 - Put the file on Github and point LiaScript site at your file.
+- Just append your file URL.
 
-**Also pretty simple options**
+  - [https://liascript.github.io/course/?https://dscroft.github.io/pee26/LIA.md](https://liascript.github.io/course/?https://dscroft.github.io/pee26/LIA.md)
 
-- LiaScript exporter to output to other formats:
+</div>
+<div class="flex-child">
+![](media/lia.png)
+</div>
+</section>
 
-  - PDF.
-  - HTML.
-  - SCORM (i.e. Moodle).
+          {{1}}
+************************************
 
-<iframe src="https://liascript.github.io/">
-</iframe>
+-----------------------------------
+
+Or use LiaScript exporter to output to other formats:
+
+<section class="flex-container">
+<div class="flex-child">
+- PDF.
+- Standalone HTML.
+- IMS.
+- Android App.
+- JSON.
+</div>
+<div class="flex-child">
+- EPUB.
+- DOCX.
+- RDF.
+- xAPI.
+- SCORM (i.e. Moodle).
+
+  - Useful for our commercially sensitive modules.
+</div>
+</section>
+
+************************************
 
 
 # Usage in WMG
 
+<section class="flex-container">
+<div class="flex-child" id="slidetext">
+
 Multiple courses and modules at various levels.
 
-- UG, MSc, DA, CPD.
+- UG, MSc, DA, CPD, Formula Student AI extracurricular.
 
-- Including online courses.
-  - Used commercial platforms for materials creation.
-    - High cost, lack of flexibility.
-  - Major issue was lack of collaborative content creation.
-    - No version control.
-    - Collaborative editing was difficult.
-    - Repeated incidents of content loss.
+- IV team still using the commercial suite for legacy materials.
+  - Can't see us developing anything new in that system.
+  - Exploring content exfiltration options.
+- New/updated materials in LiaScript.  
+
+</div>
+<div class="flex-child">
+![WMG from the air](media/wmg_air.png "WMG from the air")
+</div>
+</section>
+
 
 ## Benefits
 
@@ -358,7 +427,9 @@ Because LiaScript is just markdown and therefore a text file.
 
 ## Extensions
 
-LiaScript can be extended with custom macros to interface with external tools and APIs.
+Rendered LiaScript page is ultimately just HTML.
+
+- Highly extensible with custom macros to interface with external tools and APIs.
 
 - Worth noting that the base LiaScript functionality covered 99% our initial use case.
   - CPD course migration.
@@ -394,6 +465,8 @@ for i in range(5):
 
 ### Cybersecurity
 
+CPD modules to non-technical audiences and SQL intro sessions.
+
 - SQL injection demonstration.
 - Uses AlaSQL to run a SQL database in the browser.
   - Based on work by the [DART Team](dart@chop.edu).
@@ -403,6 +476,15 @@ for i in range(5):
           {{1}}
 ************************************
 
+------------------------------------
+
+SQL injection demo
+===================
+
+<script input="submit" default="Hint">
+"LIASCRIPT: Try entering the following as the username, you need to enter it exactly.\n\n*fake' or 1=1; \\-\\-*"
+</script>
+
 @LoginExample
 
 ************************************
@@ -411,7 +493,7 @@ for i in range(5):
 
 ### Arduino interface
 
-But this was all based on existing extensions.
+Everything discussed so far was based on existing extensions.
 
 - Our first original extension was an Arduino interface.
   - Webserial to Arduino.
@@ -501,6 +583,9 @@ Setup an actual CAN bus using Arduino boards and send real CAN frames between th
 
 ## Remote open days
 
+<section class="flex-container">
+<div class="flex-child" id="slidetext">
+
 WMG has been running virtual open days.
 
 - Increase accessibility / wider audience, 
@@ -511,24 +596,35 @@ WMG has been running virtual open days.
   - But! LiaScript classroom functionality.
   - Quickly adjust existing activity.
 
--------------------------------------------------
+</div>
+<div class="flex-child">
+![](media/1780324082477.jpg)
+</div>
+</section>
 
           {{1}}
 *****************************************
 
-Benefits 
+-------------------------------------------------
 
-- Student's just need a URL.
+Benefits 
+========
+
+- Attendee's just need a URL.
   - No accounts, no software installation.
 - Collaborative development.
   - Needed to do a fast turn around.
 
--------------------------------------------------
-
 *****************************************
 
           {{2}}
-*****************************************          
+*****************************************
+
+-------------------------------------------------
+
+The Activity
+========
+
 Groups of 2.
 
 - Alice and Charlie.
@@ -536,7 +632,10 @@ Groups of 2.
   - Then a replay attack, Charlie hacking Alice.
 - Same CAN data as with the Arduinos.
   - But sent over the net to the virtual attendees.
-*****************************************  
+
+*****************************************
+
+
 
 ## Alice 👩
 
@@ -560,29 +659,56 @@ Groups of 2.
 
 # Conclusions
 
-- Could achieve all this without LiaScript.
-  - *Just* develop a custom websites by teaching all your staff web development.
-  - Host your own webserver with account management.
+          {{0-1}}
+*****************************************
 
-- Substantially easier within LiaScript.
+General LiaScript deployment.
+=============================
 
-  - Common.
+- Very well received.
+- Lots of positive student satisfaction comments.
 
-- If using the 'standard' functionality
-  - Barrier for entry very low.
-  - Markdown is easy.
-- Deployment is trivial.
-  - Commit and push to Github.
-  - Or use LiaEdit, has export button (currently not working?).
+--------------------------------------------------
 
-- Creating/customisation of extensions is more difficult.
-  - HTML and Javascript knowledge.
-  - But once created, macro system allows easy reuse.
+Virtual open day activity 
+=========================
 
-### Future work
+- Minimal feedback captured.
+- What we have is positive.
+
+*****************************************
+ 
+          {{1-2}}
+*****************************************
+
+**Could we achieve this without LiaScript?**
+
+- Just need to teach teach all the IV staff web development.
+- Develop a custom websites.
+- Host our own webserver with account management.
+
+--------------------------------------------
+
+**Substantially easier within LiaScript.**
+
+- If using the 'standard' functionality.
+  - Development easy.
+  - Deployment trivial.
+  
+--------------------------------------------
+
+**Creating/customisation of extensions is more difficult.**
+
+- HTML and Javascript knowledge.
+- But once created, macro system allows easy reuse.
+
+*****************************************
+
+
+## Future work
 
 <section class="flex-container">
-<div class="flex-child" style="min-width: 250px">
+<div class="flex-child" id="slidetext">
 Integrating ROS into LiaScript.
 
 - RobotWebTools/Roslibjs for interaction with ROS.
@@ -590,7 +716,14 @@ Integrating ROS into LiaScript.
 - Control is easy.
 - Sensor visualisation is proving tricky.
 </div>
-<div class="flex-child" style="min-width: 250px">
+<div class="flex-child">
 ![](media/jazzy.png)
 </div>
 </section>
+
+
+# Questions?
+
+Or get in contact:
+
+[david.croft\@warwick.ac.uk](mailto:david.croft@warwick.ac.uk)
