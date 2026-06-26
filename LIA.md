@@ -169,7 +169,8 @@ LiaScript is framework for creating interactive learning materials.
   - Free as in speech.
   - Free as in beer.
 - Simple Markdown syntax.
-  - Majority of built in functionality.
+  - For majority of built in functionality.
+- Trivially version controllable.
 
 ## Markdown based
 
@@ -338,6 +339,25 @@ Plus:
 
 ************************************
 
+## Benefits
+
+<section class="flex-container">
+<div class="flex-child" style="min-width: 250px">
+Because LiaScript is just markdown and therefore a text file.
+
+- Easily version controlled with standard tools.
+  - E.g. Git, Mercurial etc.
+- Multiple collaborators can work on the same file.
+  - Merge versions.
+- Changes are tracked.
+  - Previous versions can be restored.
+  - Very hard to loose work.
+</div>
+<div class="flex-child" style="min-width: 250px">
+![Example of a git commit showing changes](media/git_diff.png "Git showing changes")
+</div>
+</section>
+
 ## Deployment
 
 <section class="flex-container">
@@ -406,24 +426,7 @@ Multiple courses and modules at various levels.
 </section>
 
 
-## Benefits
 
-<section class="flex-container">
-<div class="flex-child" style="min-width: 250px">
-Because LiaScript is just markdown and therefore a text file.
-
-- Easily version controlled with standard tools.
-  - E.g. Git, Mercurial etc.
-- Multiple collaborators can work on the same file.
-  - Merge versions.
-- Changes are tracked.
-  - Previous versions can be restored.
-  - Very hard to loose work.
-</div>
-<div class="flex-child" style="min-width: 250px">
-![Example of a git commit showing changes](media/git_diff.png "Git showing changes")
-</div>
-</section>
 
 ## Extensions
 
