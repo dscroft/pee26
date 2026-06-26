@@ -6,7 +6,6 @@ language: en
 narrator: UK English Female
 
 classroom: enable
-mode: Presentation
 icon: https://dscroft.github.io/liascript_materials/assets/logo.svg
 
 import: https://raw.githubusercontent.com/LiaScript/CodeRunner/master/README.md
@@ -96,7 +95,7 @@ This presentation was created in [LiaScript](https://liascript.github.io/).
 <section class="flex-container">
 <div class="flex-child" id="slidetext">
 
-- This is "Presentation" mode.
+- Presenting in "Presentation" mode.
 - If you want to follow along.
   
   - Just scan the QR to get the URL.
@@ -357,6 +356,7 @@ Because LiaScript is just markdown and therefore a text file.
 ![Example of a git commit showing changes](media/git_diff.png "Git showing changes")
 </div>
 </section>
+
 
 ## Deployment
 
@@ -640,7 +640,7 @@ Groups of 2.
 
 
 
-## Alice 👩
+### Alice 👩
 
 @Classroom.defaultManager
 
