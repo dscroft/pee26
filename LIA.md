@@ -8,7 +8,7 @@ narrator: UK English Female
 classroom: enable
 icon: https://dscroft.github.io/liascript_materials/assets/logo.svg
 
-import: https://raw.githubusercontent.com/LiaScript/CodeRunner/master/README.md
+mport: https://raw.githubusercontent.com/LiaScript/CodeRunner/master/README.md
 import: macros_interface.md
 import: macros_dashboard.md
 import: sqli_demo.md
@@ -153,8 +153,8 @@ Course needs regular updates.
 
 Commercial suite might be acceptable for an individual.
 
-- Did not work for a team.
-- Also expensive, £749 per seat.
+- Did not work for collaboration.
+- Also expensive, £749 per license.
 </div>
 <div class="flex-child">
 ![PHD comics, Final.doc, Final_rec2.doc, FINAL_rev.6.COMMENTS.doc etc.](media/phd101212s.gif "Version control failures")
@@ -167,7 +167,7 @@ Commercial suite might be acceptable for an individual.
 Looking for alternatives.
 
 - LiaScript is framework for creating interactive learning materials. 
-  - Credit to André Dietrich.
+  - Credit to André Dietrich, Technical University Bergakademie in Freiberg.
 - Open-source.
   - Free as in speech.
   - Free as in beer.
@@ -508,7 +508,7 @@ SQL injection demo
 
 
 
-### Arduino interface
+### Harware interface
 
 Everything discussed so far was based on existing extensions.
 
@@ -518,12 +518,17 @@ Everything discussed so far was based on existing extensions.
   - Whatever you want to do with an Arduino.
 - Point isn't Arduino.
   - Point is controllable/readable hardware from within the teaching materials.
+- Original concept was to support remote CPD course delivery for an aerospace partner.
+  - Ship peli cases with hardware rigs to satellite offices.
+  - Plug into your machine and load lesson contents from us.
+
+--------------------------------------------------------------
 
 The extension, 
 [https://github.com/dscroft/liascript_servo](https://github.com/dscroft/liascript_servo).
 
-- Works.
-- Todo - make friendlier.
+- TODO - make user friendlier.
+- TODO - proper documentation.
 
 -----------------------------------
 
@@ -537,29 +542,16 @@ Robot arm interface
 
 - Rapid prototyping module.
 
-</div>
-<div class="flex-child" style="min-width: 250px">
 ![](media/PXL_20260624_080228454.jpg)
+
+
 </div>
-</section>
-
--------------------------------------
-
-************************************
-
-
-              {{2}}
-************************************
-
-<section class="flex-container">
 <div class="flex-child" style="min-width: 250px">
 CAN bus interface
 =================
 
 - Automotive Cybersecurity CPD.
 
-</div>
-<div class="flex-child" style="min-width: 250px">
 ![](media/PXL_20250609_093926667.jpg.webp "CAN bus setup in the lab")
 </div>
 </section>
@@ -570,7 +562,15 @@ CAN bus interface
 
 # CAN hacking
 
+Lab activity.
+
 Setup an actual CAN bus using Arduino boards and send real CAN frames between them.
+
+- Understand frames.
+- CAN sniffing.
+- Replay attacks.
+
+------------------------------------
 
 <section class="flex-container">
 
@@ -583,8 +583,7 @@ Setup an actual CAN bus using Arduino boards and send real CAN frames between th
 - Embedding in LiaScript.
   - Free.
   - No deployment issues.
-  - Just does what we need.
-
+  - More integrated experience.
 </div>
 
 <!-- class="flex-child" style="min-width: 600px;" -->
