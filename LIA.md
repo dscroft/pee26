@@ -40,7 +40,7 @@ link:  styles.css
     }
 }
 
-#slidetext {
+.slidetext {
     min-width: 700px;
 }
 @end
@@ -93,7 +93,7 @@ window.send_can_frame = function(frameid, data) {
 This presentation was created in [LiaScript](https://liascript.github.io/).
 
 <section class="flex-container">
-<div class="flex-child" id="slidetext">
+<div class="flex-child slidetext">
 
 - Presenting in "Presentation" mode.
 - If you want to follow along.
@@ -113,7 +113,7 @@ Need someone to or the demo won't work.
 # WMG
 
 <section class="flex-container">
-<div class="flex-child" id="slidetext">
+<div class="flex-child slidetext">
 The Intelligent Vehicles (IV) teaching group within Warwick Manufacturing Group (WMG).
 
 - Been delivering the Smart Connected Autonomous Vehicles (SCAV) maters programme.
@@ -137,7 +137,7 @@ Delivery was a success.
 ## Maintenance
 
 <section class="flex-container">
-<div class="flex-child" id="slidetext">
+<div class="flex-child slidetext">
 Course needs regular updates.
 
 - Changes requested by partner organisation.
@@ -164,7 +164,7 @@ Commercial suite might be acceptable for an individual.
 
 # LiaScript
 
-Looking for alternatives.
+Lesson learnt, look for alternatives that support collaboration.
 
 - LiaScript is framework for creating interactive learning materials. 
   - Credit to André Dietrich, Technical University Bergakademie in Freiberg.
@@ -173,14 +173,17 @@ Looking for alternatives.
   - Free as in beer.
 - Simple Markdown syntax.
   - For majority of built in functionality.
-- Trivially version controllable.
+- Specifically designed to support/encourage collaboration.
+  - Trivially version controllable.
+
 
 
 ## Markdown based
 
+If you're not familiar already, 
 Markdown is a simple markup language.
 
-- Markup language is something like HTML.
+- Markup language is something like HTML or $\LaTeX$.
   - Text based system to describe structure and formatting.
 - Markdown is an especially lightweight system.
 
@@ -212,7 +215,7 @@ and ~strikethrough~.
 
 Or Maths.
 
-- Should be familiar to LaTeX users
+- Should be familiar to $\LaTeX$ users
 
 <section class="flex-container">
 <div class="flex-child" style="min-width: 250px">
@@ -375,7 +378,7 @@ Because LiaScript is just markdown and therefore a text file.
 ## Deployment
 
 <section class="flex-container">
-<div class="flex-child" id="slidetext">
+<div class="flex-child slidetext">
 
 **Simple option**
 
@@ -422,7 +425,7 @@ Or use LiaScript exporter to output to other formats:
 # Usage in WMG
 
 <section class="flex-container">
-<div class="flex-child" id="slidetext">
+<div class="flex-child slidetext">
 
 Multiple courses and modules at various levels.
 
@@ -609,7 +612,7 @@ Setup an actual CAN bus using Arduino boards and send real CAN frames between th
 ## Remote open days
 
 <section class="flex-container">
-<div class="flex-child" id="slidetext">
+<div class="flex-child slidetext">
 
 WMG has been running virtual open days.
 
@@ -651,7 +654,7 @@ The Activity
 ========
 
 <section class="flex-container">
-<div class="flex-child" id="slidetext">
+<div class="flex-child slidetext">
 
 Groups of 2.
 
@@ -748,7 +751,7 @@ Virtual open day activity
 ## Future work
 
 <section class="flex-container">
-<div class="flex-child" id="slidetext">
+<div class="flex-child slidetext">
 Integrating ROS into LiaScript.
 
 - RobotWebTools/Roslibjs for interaction with ROS.
