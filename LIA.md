@@ -146,12 +146,15 @@ Course needs regular updates.
   
 - Specific major incident.
   - Half the module material lost from the platform.
-  - Backups meant no delivery impact.
+  - Write only backups meant no delivery impact.
   - But had to recreate everthing.
   
+--------------------------------------------------
+
 Commercial suite might be acceptable for an individual.
 
 - Did not work for a team.
+- Also expensive, £749 per seat.
 </div>
 <div class="flex-child">
 ![PHD comics, Final.doc, Final_rec2.doc, FINAL_rev.6.COMMENTS.doc etc.](media/phd101212s.gif "Version control failures")
@@ -161,15 +164,17 @@ Commercial suite might be acceptable for an individual.
 
 # LiaScript
 
-LiaScript is framework for creating interactive learning materials. 
+Looking for alternatives.
 
-- Credit to André Dietrich.
+- LiaScript is framework for creating interactive learning materials. 
+  - Credit to André Dietrich.
 - Open-source.
   - Free as in speech.
   - Free as in beer.
 - Simple Markdown syntax.
   - For majority of built in functionality.
 - Trivially version controllable.
+
 
 ## Markdown based
 
@@ -181,7 +186,7 @@ Markdown is a simple markup language.
 
 -------------------------------------
 
-          {{1-2}}
+          {{0-1}}
 ************************************
 
 Markdown lets you do things like...
@@ -202,10 +207,12 @@ and ~strikethrough~.
 
 ************************************
 
-          {{2-3}}
+          {{1-2}}
 ************************************
 
 Or Maths.
+
+- Should be familiar to LaTeX users
 
 <section class="flex-container">
 <div class="flex-child" style="min-width: 250px">
@@ -220,10 +227,12 @@ $$c = \sqrt{a^2 + b^2}$$
 
 ************************************
 
-          {{3-4}}
+          {{2-3}}
 ************************************
 
 Or Code.
+
+- Syntax highlighting & copy-all.
 
 <section class="flex-container">
 <div class="flex-child" style="min-width: 250px">
@@ -242,32 +251,36 @@ float c = sqrt(pow(a,2) + pow(b,2));
 
 ************************************
 
-          {{4-5}}
+          {{3-4}}
 ************************************
 
 Or Tables:
 
+- Sortable.
+
 <section class="flex-container">
 <div class="flex-child" style="min-width: 250px">
 ```markdown
-| Col A | Col B |
-|-------|-------|
-| A1    | B1    |
-| A2    | B2    |
+| Col A   | Col B |
+| ------- | ----- |
+| Alpha   | B1    |
+| Beta    | B2    |
+| Charlie | B3    |
 ```
 </div>
 <div class="flex-child" style="min-width: 250px">
-| Col A | Col B |
-|-------|-------|
-| A1    | B1    |
-| A2    | B2    |
+| Col A   | Col B |
+| ------- | ----- |
+| Alpha   | B1    |
+| Beta    | B2    |
+| Charlie | B3    |
 </div>
 </section>
 
 ************************************
 
 
-          {{5-6}}
+          {{4-5}}
 ************************************
 
 Or Images:
@@ -281,7 +294,7 @@ Or Images:
 ************************************
 
 
-          {{6-7}}
+          {{5-6}}
 ************************************
 
 Or (in LiaScript) quizzes:
@@ -314,7 +327,7 @@ According to Douglas Adams at least.
 ************************************
 
 
-          {{7-8}}
+          {{6-7}}
 ************************************
 
 Plus:
@@ -337,6 +350,7 @@ Plus:
 </section>
 
 ************************************
+
 
 ## Benefits
 
@@ -501,6 +515,15 @@ Everything discussed so far was based on existing extensions.
 - Our first original extension was an Arduino interface.
   - Webserial to Arduino.
 - Read sensor data or control actuators directly from our learning materials.
+  - Whatever you want to do with an Arduino.
+- Point isn't Arduino.
+  - Point is controllable/readable hardware from within the teaching materials.
+
+The extension, 
+[https://github.com/dscroft/liascript_servo](https://github.com/dscroft/liascript_servo).
+
+- Works.
+- Todo - make friendlier.
 
 -----------------------------------
 
@@ -628,6 +651,9 @@ Benefits
 The Activity
 ========
 
+<section class="flex-container">
+<div class="flex-child" id="slidetext">
+
 Groups of 2.
 
 - Alice and Charlie.
@@ -635,6 +661,16 @@ Groups of 2.
   - Then a replay attack, Charlie hacking Alice.
 - Same CAN data as with the Arduinos.
   - But sent over the net to the virtual attendees.
+
+</div>
+<div class="flex-child">
+
+[qr-code](https://liascript.github.io/course/?https://dscroft.github.io/liascript_can_hacking/classroom.md "The actual session")
+
+</div>
+</section>
+
+[https://liascript.github.io/course/?https://dscroft.github.io/liascript_can_hacking/classroom.md](https://liascript.github.io/course/?https://dscroft.github.io/liascript_can_hacking/classroom.md)
 
 *****************************************
 
@@ -670,6 +706,8 @@ General LiaScript deployment.
 
 - Very well received.
 - Lots of positive student satisfaction comments.
+- Expanding usage.
+  - Re-usable library of topics.
 
 --------------------------------------------------
 
@@ -677,7 +715,7 @@ Virtual open day activity
 =========================
 
 - Minimal feedback captured.
-- What we have is positive.
+  - But What we have is positive.
 
 *****************************************
  
