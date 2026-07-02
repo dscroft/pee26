@@ -8,7 +8,7 @@ narrator: UK English Female
 classroom: enable
 icon: https://dscroft.github.io/liascript_materials/assets/logo.svg
 
-mport: https://raw.githubusercontent.com/LiaScript/CodeRunner/master/README.md
+import: https://raw.githubusercontent.com/LiaScript/CodeRunner/master/README.md
 import: macros_interface.md
 import: macros_dashboard.md
 import: sqli_demo.md
