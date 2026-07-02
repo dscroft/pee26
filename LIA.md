@@ -709,7 +709,8 @@ Groups of 2.
 General LiaScript deployment.
 =============================
 
-- Very well received.
+- Well received.
+  - Student satisfaction, PAI 82%, ASSF 97%, 87%, 99%. 
 - Lots of positive student satisfaction comments.
 - Expanding usage.
   - Re-usable library of topics.
