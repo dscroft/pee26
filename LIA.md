@@ -514,7 +514,7 @@ SQL injection demo
 
 
 
-### Harware interface
+### Hardware interface
 
 Everything discussed so far was based on existing extensions.
 
