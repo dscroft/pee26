@@ -90,10 +90,11 @@ window.send_can_frame = function(frameid, data) {
 
 ---------------------------------------
 
-This presentation was created in [LiaScript](https://liascript.github.io/).
-
 <section class="flex-container">
 <div class="flex-child slidetext">
+
+This presentation was created in [LiaScript](https://liascript.github.io/).
+
 
 - Presenting in "Presentation" mode.
 - If you want to follow along.
@@ -105,7 +106,9 @@ Need someone to or the demo won't work.
 </div>
   
 <div class="flex-child">
-[qr-code](https://liascript.github.io/course/?eyJiYWNrZW5kIjoiTVFUVCIsImNvdXJzZSI6Imh0dHBzOi8vZHNjcm9mdC5naXRodWIuaW8vcGVlMjYvTElBLm1kIiwicm9vbSI6InBlZTI2In0=#1)
+[https://tinyurl.com/pee26lia](https://tinyurl.com/pee26lia)
+
+[qr-code](https://liascript.github.io/course/?eyJiYWNrZW5kIjoiTVFUVCIsImNvdXJzZSI6Imh0dHBzOi8vZHNjcm9mdC5naXRodWIuaW8vcGVlMjYvTElBLm1kIiwicm9vbSI6InBlZTI2In0=)
 </div>
 </section>
 
