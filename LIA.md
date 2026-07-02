@@ -686,7 +686,7 @@ Groups of 2.
 @Classroom.defaultManager
 
 <section class="flex-container">
-<div class="flex-child" style="min-width: 200px; max-width: 50%;">
+<div class="flex-child" style="min-width: 200px;">
 @can.alice
 </div>
 <div class="flex-child" style="min-width: 560px;">
